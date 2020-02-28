@@ -1,3 +1,11 @@
-#navJumbotron {
+body {
     background-color: black;
+}
+
+#navContainer {
+    background-color: black;
+}
+
+.headerBanner {
+    color: navy;
 }
