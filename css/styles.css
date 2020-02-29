@@ -79,3 +79,14 @@ html,body {
     background-image: url("../img/menu_dessert.jpg");
     height: 400px;
 }
+
+.card-body {
+    background-color: rgb(59, 86, 134);
+    color: black;
+}
+
+.card-header {
+    font-family: 'Girassol', cursive;
+    background-color: #488cf3;
+    color: black;
+}
