@@ -90,3 +90,28 @@ html,body {
     background-color: #488cf3;
     color: black;
 }
+
+.col-form-label {
+    color: #488cf3
+}
+
+.form-bg {
+    background-color: rgb(59, 86, 134);
+}
+
+input::placeholder {
+    color: black;
+}
+
+.contact-btn {
+    color: rgb(0, 0, 128);
+}
+
+#formButton {
+    background-color: #488cf3;
+    color: black;
+}
+
+#formHeader {
+    color: #488cf3;
+}
