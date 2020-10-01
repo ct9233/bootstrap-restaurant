@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Girassol|Roboto&display=swap" />
+
+    <title>Restaurant Site</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="navContainer">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <a class="col-sm-4 navbar-brand" href="index.html"> <img class="img-fluid" src="img/ristorante_header.jpg"> </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#rNavbar">
+                    <span class="navbar-toggler-icon"> </span>
+                    </button>
+                <div class="collapse navbar-collapse" id="rNavbar">
+                    <ul class="col-sm-8 m-sm-auto navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"> <i class="fa fa-home fa-lg"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html"> <i class="fa fa-list-alt fa-lg"></i> Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="story.html"> <i class="fa fa-info fa-lg"></i> Story</a>
+                        </li>
+                        <li class="nav-item active" id="navActive">
+                            <a class="nav-link" href="#"> <i class="fa fa-address-card fa-lg"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col px-0">
+                <ol class="breadcrumb bg-dark">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Contact</li>
+                </ol>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row ml-auto my-5">
+            <div class="col-md-4 offset-1 offset-md-0 align-self-center">
+                <div class="card border-dark" style="width: 15rem;">
+                    <h3 class="card-header">Our Contact Info</h3>
+                </div>
+                <div class="card-body rounded" style="width: 15rem;">
+                    <a role="button" class="btn btn-link contact-btn align-items-center" href="tel:+19999999999"> <i class="fa fa-phone"> </i> 999-999-9999
+                    </a> <br>
+                    <a role="button" class="btn btn-link contact-btn" href="contact.html#mapWindow"> <i class="fa fa-map-marker"> </i> 9999 NW 100th Ave. </br> Anytown, USA 12345 </a>
+                </div>
+                
+            </div>
+            <div class="col-md-7 offset-1" id="mapWindow">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.6768341322639!2d-98.78705691485213!3d38.361835920888545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87a38a5476f1dc01%3A0xbcba90bd38c16e1a!2s3504%2010th%20St%2C%20Great%20Bend%2C%20KS%2067530!5e0!3m2!1sen!2sus!4v1582950853305!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-12 text-center" id="formHeader"><h3>Send us a Comment</h3></div>
+        </div>
+        <div class="row mb-5 ml-auto">
+            <div class="col-10">
+                <form>
+                    <div class="form-group row">
+                        <label for="userName" class="col-md-2 col-form-label">Name </label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control form-bg border-primary" id="userName"
+                                name="userName" placeholder="Name" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="phoneNumber" class="col-md-2 col-form-label">Phone </label>
+                        <div class="col-md-10">
+                            <input type="tel" class="form-control form-bg border-primary" id="phoneNumber"
+                                name="phoneNumber" placeholder="Phone Number" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email </label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control form-bg border-primary" id="email"
+                                name="email" placeholder="Email" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Comment </label>
+                        <div class="col-md-10">
+                            <textarea class="form-control form-bg border-primary" id="comment"
+                                name="comment" rows="8"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6 ml-auto">
+                            <button type="submit" id="formButton" class="btn border-dark">Send
+                                Comment </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="siteFooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 col-sm-3 offset-2 offset-sm-1">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-4 text-center">
+              <h5>Social</h5>
+              <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"> <i class="fa fa-twitter"> </i>
+              </a>
+              <a class="btn btn-social-icon btn-pinterest" href="http://pinterest.com/"> <i class="fa fa-pinterest"> </i>
+              </a>
+              <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"> <i class="fa fa-instagram"> </i> </a>
+            </div>
+            <div class="col-12 col-sm-4 text-center">
+              <a role="button" class="btn btn-link" href="tel:+19999999999"> <i class="fa fa-phone"> </i> 999-999-9999
+              </a> <br>
+              <a role="button" class="btn btn-link" href="contact.html#mapWindow"> <i class="fa fa-map-marker"> </i> 9999 NW 100th Ave. </br> Anytown, USA 12345 </a>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>
