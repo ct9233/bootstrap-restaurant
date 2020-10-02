@@ -1,1 +1,1 @@
-Portfolio Project 1 - Bootstrap Site
+Bootstrap Restaurant Site Project
